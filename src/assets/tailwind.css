@@ -1,0 +1,122 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --sidebar-width: 250px;
+  --navbar-height: 75px;
+  --sideTool-width: 200px;
+  --content-width: calc(100vw - var(--sidebar-width));
+}
+#routing-container {
+  top: var(--navbar-height);
+  left: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  align-items: center;
+}
+#navbar {
+  border-color: gainsboro;
+  border-bottom-width: 1px;
+}
+#sidebar {
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0;
+  height: calc(100vh - var(--navbar-height));
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-color: gainsboro;
+  border-right-width: 1px;
+  padding: 50px 10px 10px 50px;
+}
+
+.sideBarItem{
+  display: block;
+  color: gray;
+}
+
+.sideBarItem:hover{
+  color: black;
+}
+.sideBarItem:hover{
+  color: black;
+}
+.router-link-active{
+  color: #2b43ff;
+  font-weight: bold;
+}
+.router-link-active:hover{
+  color: #2b43ff;
+  font-weight: bold;
+}
+
+.content{
+  padding: 50px 90px 90px 90px;
+  overflow-y: auto;
+  text-align: center;
+  height: calc(100vh - var(--navbar-height));
+  width: var(--content-width)
+}
+.header{
+  font-size:50px;
+  text-align: left;
+  width: 750px;
+  font-weight: bold;
+}
+.command{
+  text-align: left;
+  display: inline-block;
+  width: 750px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.header2{
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 750px;
+}
+.description{
+  background-color: #8895fa18;
+  padding: 20px;
+  border-radius: 10px;
+  width: 750px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.button{
+  border-color: gainsboro;
+  border-width: 1px;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: gray;
+  font-size: small;
+}
+.button:hover{
+  color: darkgray;
+  border-color: darkgray;
+}
+.nextButtonContainer{
+  margin-bottom: 50px;
+}
+.gif{
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0.5px 0.5px 3px darkgray, -0.5px -0.5px 3px darkgray;
+  margin-bottom: 40px;
+}
+li {
+  list-style-position: outside;
+  padding-top: 5px;
+}
+ol{
+  list-style: number;
+  padding-left: 20px;
+}
